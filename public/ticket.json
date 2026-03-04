@@ -1,0 +1,110 @@
+[
+  {
+    "id": "TIC-101",
+    "title": "Login Authentication Error",
+    "description": "Users are unable to login via Google OAuth on mobile devices.",
+    "customer": "Rahim Ahmed",
+    "priority": "Urgent",
+    "status": "Open",
+    "createdAt": "2024-03-01T09:30:00Z"
+  },
+  {
+    "id": "TIC-102",
+    "title": "Payment Gateway Timeout",
+    "description": "SSLCommerz timeout occurring during checkout process intermittently.",
+    "customer": "Karim Ullah",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2024-03-01T11:45:00Z"
+  },
+  {
+    "id": "TIC-103",
+    "title": "UI Alignment Issue in Dashboard",
+    "description": "The sidebar overlaps with the main content on 13-inch screens.",
+    "customer": "Sarah Khan",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2024-03-02T08:20:00Z"
+  },
+  {
+    "id": "TIC-104",
+    "title": "Password Reset Email Not Sent",
+    "description": "Users report not receiving the password recovery link in their inbox.",
+    "customer": "Tanvir Hasan",
+    "priority": "High",
+    "status": "Resolved",
+    "createdAt": "2024-03-02T14:10:00Z"
+  },
+  {
+    "id": "TIC-105",
+    "title": "Slow API Response Time",
+    "description": "The /api/v1/products endpoint takes more than 5 seconds to load.",
+    "customer": "Anika Tabassum",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2024-03-03T10:05:00Z"
+  },
+  {
+    "id": "TIC-106",
+    "title": "Typo in Terms & Conditions",
+    "description": "Minor spelling mistake in the third paragraph of the legal page.",
+    "customer": "Zubayer Ali",
+    "priority": "Low",
+    "status": "Closed",
+    "createdAt": "2024-03-03T16:50:00Z"
+  },
+  {
+    "id": "TIC-107",
+    "title": "Search Filter Not Working",
+    "description": "Applying multiple category filters returns zero results incorrectly.",
+    "customer": "Fahim Shahriar",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2024-03-04T09:00:00Z"
+  },
+  {
+    "id": "TIC-108",
+    "title": "Database Migration Script Fail",
+    "description": "The latest migration script failed on the staging server.",
+    "customer": "Internal DevOps",
+    "priority": "Urgent",
+    "status": "In Progress",
+    "createdAt": "2024-03-04T13:30:00Z"
+  },
+  {
+    "id": "TIC-109",
+    "title": "Mobile App Crashing on iOS",
+    "description": "App crashes immediately after the splash screen on iPhone 15.",
+    "customer": "Nabil Rahman",
+    "priority": "Urgent",
+    "status": "Open",
+    "createdAt": "2024-03-04T15:20:00Z"
+  },
+  {
+    "id": "TIC-110",
+    "title": "Feature Request: Dark Mode",
+    "description": "Customer wants a native dark mode for the web portal.",
+    "customer": "Sumi Akter",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2024-03-04T18:00:00Z"
+  },
+  {
+    "id": "TIC-111",
+    "title": "Invoice PDF Generation Error",
+    "description": "Special characters are not rendering correctly in the PDF invoices.",
+    "customer": "Imtiaz Ahmed",
+    "priority": "Medium",
+    "status": "Resolved",
+    "createdAt": "2024-03-04T20:45:00Z"
+  },
+  {
+    "id": "TIC-112",
+    "title": "Session Expiry Issue",
+    "description": "Users are being logged out too quickly (within 5 minutes of activity).",
+    "customer": "Mehedi Hasan",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2024-03-04T22:15:00Z"
+  }
+]
