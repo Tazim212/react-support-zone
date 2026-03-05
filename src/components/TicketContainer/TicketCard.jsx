@@ -1,12 +1,21 @@
 import React from 'react';
 import { FaCalendar } from 'react-icons/fa';
 import ellipse from '../../assets/Ellipse 22.png'
+import { toast } from 'react-toastify';
 
-const TicketCard = ({ ticket }) => {
+const TicketCard = ({ ticket, taskStatus, setTaskStatus, setStatus}) => {
 
     const { id, title, description, customer, priority, status, createdAt } = ticket
+
+    const taskFunc = (data) =>{
+        const newTask = [...taskStatus, data]
+        setTaskStatus(newTask)
+        toast("Task has been addeded")
+        setStatus(false)
+    }
+
     return (
-        <div className='py-4 bg-white text-black w-[510px] ps-2 rounded-xl'>
+        <div onClick={()=> taskFunc(ticket)} className='py-4 bg-white text-black w-[470px] ps-2 mx-3 md:mx-0 rounded-xl cursor-pointer transition-all duration-300 hover:scale-105 active:scale-95'>
             <div className='flex gap-4'>
                 <h3 className='font-semibold'>Login Issues - {title}</h3>
 
@@ -17,12 +26,12 @@ const TicketCard = ({ ticket }) => {
             </div>
             <p className='py-2'>{description}</p>
 
-            <div className='flex gap-12'>
+            <div className='flex gap-7 justify-center items-center'>
                 <div className='flex gap-2'>
                     <p># {id}</p>
                     <p>{priority}</p>
                 </div>
-                <div className='flex gap-5'>
+                <div className='flex gap-2'>
                     <p>{customer}</p>
                     <div className='flex justify-center items-center gap-2'>
                         <span className='text-xl'><FaCalendar></FaCalendar></span>
