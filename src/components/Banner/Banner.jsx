@@ -3,7 +3,7 @@ import vector1 from '../../assets/vector1.png'
 // import vector2 from '../../assets/vector.png'
 
 const Banner = ({ progress, resolved }) => {
-    console.log(resolved)
+
     return (
         <div className='flex justify-center items-center gap-1 mt-10'>
             <div

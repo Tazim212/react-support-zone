@@ -17,11 +17,12 @@ const TicketCard = ({ ticket, taskStatus, setTaskStatus, setStatus, setProgress,
     }
 
     return (
-        <div onClick={()=> taskFunc(ticket)} className='py-4 bg-gray-200 text-black w-[470px] px-3 mx-3 md:mx-0 rounded-xl cursor-pointer transition-all duration-300 hover:scale-105 active:scale-95'>
+        <div onClick={()=> taskFunc(ticket)} className='py-4 bg-gray-200 text-black w-[470px] px-2 mx-3 md:mx-0 rounded-xl cursor-pointer transition-all duration-300 hover:scale-105 active:scale-95'>
             <div className='flex gap-4'>
                 <h3 className='font-semibold'>Login Issues - {title}</h3>
 
-                    <div className={status === 'Open' || status === "Resolved" ? 'badge badge-success my-1.5' : 'badge badge-warning my-1.5'}>                        <img src={ellipse} className='w-5 rounded-b-full' alt="" />
+                    <div className={status === 'Open' || status === "Resolved" ? 'badge badge-success my-1.5' : 'badge badge-warning my-1.5 px-2'}>
+                        <img src={ellipse} className='w-5 rounded-full' alt="" />
                         {status}
                     </div>
 
