@@ -29,7 +29,7 @@ const TicketContainer = ({ ticketData }) => {
                         status ?
                             "Select a ticket to add to Task Status"
                             :
-                            taskStatus.map(task => <div className='bg-yellow-50 text-black px-3 py-2 mt-3'>
+                            taskStatus.map(task => <div className='text-black px-3 py-2 mt-3'>
                                 <h2>{task.title}</h2>
                                 <button onClick={clickComplete} className='btn btn-success w-48 mt-2'>Complete</button>
                             </div>)

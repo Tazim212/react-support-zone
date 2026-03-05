@@ -15,7 +15,7 @@ const TicketCard = ({ ticket, taskStatus, setTaskStatus, setStatus}) => {
     }
 
     return (
-        <div onClick={()=> taskFunc(ticket)} className='py-4 bg-white text-black w-[470px] ps-2 mx-3 md:mx-0 rounded-xl cursor-pointer transition-all duration-300 hover:scale-105 active:scale-95'>
+        <div onClick={()=> taskFunc(ticket)} className='py-4 bg-gray-200 text-black w-[470px] px-3 mx-3 md:mx-0 rounded-xl cursor-pointer transition-all duration-300 hover:scale-105 active:scale-95'>
             <div className='flex gap-4'>
                 <h3 className='font-semibold'>Login Issues - {title}</h3>
 
