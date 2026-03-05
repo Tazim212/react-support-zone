@@ -3,13 +3,15 @@ import { FaCalendar } from 'react-icons/fa';
 import ellipse from '../../assets/Ellipse 22.png'
 import { toast } from 'react-toastify';
 
-const TicketCard = ({ ticket, taskStatus, setTaskStatus, setStatus}) => {
+const TicketCard = ({ ticket, taskStatus, setTaskStatus, setStatus, setProgress, progress}) => {
 
     const { id, title, description, customer, priority, status, createdAt } = ticket
 
     const taskFunc = (data) =>{
         const newTask = [...taskStatus, data]
         setTaskStatus(newTask)
+        const newProgress = [...progress, data]
+        setProgress(newProgress)
         toast("Task has been addeded")
         setStatus(false)
     }

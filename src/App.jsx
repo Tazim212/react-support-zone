@@ -1,4 +1,4 @@
-import { Suspense, use } from 'react'
+import { Suspense, use, useState } from 'react'
 import './App.css'
 import { ToastContainer } from 'react-toastify';
 import Banner from './components/Banner/Banner'
@@ -10,6 +10,9 @@ const loadTicket = fetch('ticket.json').then(res => res.json())
 
 function App() {
 
+  const [progress, setProgress] = useState([])
+  const [resolved, setResolved] = useState(0)
+
   const ticketData = use(loadTicket)
 
   // console.log(ticketData)
@@ -17,9 +20,16 @@ function App() {
     <div>
       <Navbar></Navbar>
       <div className='max-w-[1240px] mx-auto'>
-        <Banner></Banner>
+        <Banner progress={progress} resolved={resolved}></Banner>
         <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
-          <TicketContainer ticketData={ticketData}></TicketContainer>
+          <TicketContainer ticketData={ticketData} 
+          progress={progress} 
+          setProgress={setProgress}
+          resolved={resolved}
+          setResolved={setResolved}
+          >
+
+          </TicketContainer>
         </Suspense>
       </div>
       <Footer></Footer>
