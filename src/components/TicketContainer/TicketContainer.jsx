@@ -27,7 +27,7 @@ const TicketContainer = ({ ticketData, progress, setProgress, setResolved }) => 
         <div>
             <h1 className='font-bold text-2xl mt-4 ms-5'>Customer Tickets</h1>
             <div className='flex flex-wrap md:flex-nowrap gap-3 justify-center'>
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mt-5'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mt-5 mx-4 md:mx-0'>
                     {
                         loadData.map(ticket => <TicketCard
                             key={ticket.id}

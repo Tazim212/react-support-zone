@@ -17,11 +17,11 @@ const TicketCard = ({ ticket, taskStatus, setTaskStatus, setStatus, setProgress,
     }
 
     return (
-        <div onClick={()=> taskFunc(ticket)} className='py-4 bg-gray-200 text-black w-[470px] px-2 mx-3 md:mx-0 rounded-xl cursor-pointer transition-all duration-300 hover:scale-105 active:scale-95'>
+        <div onClick={()=> taskFunc(ticket)} className='py-4 bg-gray-200 text-black w-fit md:w-[470px] px-2 rounded-xl cursor-pointer transition-all duration-300 hover:scale-105 active:scale-95'>
             <div className='flex gap-4'>
                 <h3 className='font-semibold'>Login Issues - {title}</h3>
 
-                    <div className={status === 'Open' || status === "Resolved" ? 'badge badge-success my-1.5' : 'badge badge-warning my-1.5 px-2'}>
+                    <div className={status === 'Open' || status === "Resolved" ? 'badge badge-success w-2/4 md:w-28 my-1.5 py-3' : 'badge badge-warning my-1.5 w-3/4 md:w-32 py-3'}>
                         <img src={ellipse} className='w-5 rounded-full' alt="" />
                         {status}
                     </div>
@@ -29,13 +29,13 @@ const TicketCard = ({ ticket, taskStatus, setTaskStatus, setStatus, setProgress,
             </div>
             <p className='py-2'>{description}</p>
 
-            <div className='flex gap-7 justify-center items-center'>
-                <div className='flex gap-2'>
+            <div className='flex gap-2 md:gap-7 md:justify-center md:items-center'>
+                <div className='flex gap-1 md:gap-2'>
                     <p># {id}</p>
                     <p>{priority}</p>
                 </div>
                 <div className='flex gap-2'>
-                    <p>{customer}</p>
+                    <p className='ps-2 md:ps-0'>{customer}</p>
                     <div className='flex justify-center items-center gap-2'>
                         <span className='text-xl'><FaCalendar></FaCalendar></span>
                         <p>{createdAt}</p>
